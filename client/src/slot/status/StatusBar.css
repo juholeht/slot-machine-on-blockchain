@@ -1,0 +1,26 @@
+.account {
+    text-align: left;
+    padding-left: 3.7rem;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding-top: 1.7rem;
+  }
+
+.balances-row {
+    display: flex;
+    padding-top: 0.4rem;
+}
+
+.address {
+    padding-top: 1rem;
+}
+
+.winnings {
+    padding-left: 8rem;
+}
+
+.jackpot {
+    padding-left: 8rem;
+}

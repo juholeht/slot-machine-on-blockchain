@@ -1,0 +1,253 @@
+{
+    "frames": {
+        "Fireworks_Sequence_1":
+        {
+            "frame": {"x":0,"y":0,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_2":
+        {
+            "frame": {"x":256,"y":0,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_3":
+        {
+            "frame": {"x":512,"y":0,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_4":
+        {
+            "frame": {"x":768,"y":0,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_5":
+        {
+            "frame": {"x":1024,"y":0,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_6":
+        {
+            "frame": {"x":1280,"y":0,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_7":
+        {
+            "frame": {"x":0,"y":256,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_8":
+        {
+            "frame": {"x":256,"y":256,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_9":
+        {
+            "frame": {"x":512,"y":256,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_10":
+        {
+            "frame": {"x":768,"y":256,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_11":
+        {
+            "frame": {"x":1024,"y":256,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_12":
+        {
+            "frame": {"x":1280,"y":256,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_13":
+        {
+            "frame": {"x":0,"y":512,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_14":
+        {
+            "frame": {"x":256,"y":512,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_15":
+        {
+            "frame": {"x":512,"y":512,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_16":
+        {
+            "frame": {"x":768,"y":512,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_17":
+        {
+            "frame": {"x":1024,"y":512,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_18":
+        {
+            "frame": {"x":1280,"y":512,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_19":
+        {
+            "frame": {"x":0,"y":768,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_20":
+        {
+            "frame": {"x":256,"y":768,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_21":
+        {
+            "frame": {"x":512,"y":768,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_22":
+        {
+            "frame": {"x":768,"y":768,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_23":
+        {
+            "frame": {"x":1024,"y":768,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_24":
+        {
+            "frame": {"x":1280,"y":768,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_25":
+        {
+            "frame": {"x":0,"y":1024,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_26":
+        {
+            "frame": {"x":256,"y":1024,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_27":
+        {
+            "frame": {"x":512,"y":1024,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_28":
+        {
+            "frame": {"x":768,"y":1024,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_29":
+        {
+            "frame": {"x":1024,"y":1024,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        },
+        "Fireworks_Sequence_30":
+        {
+            "frame": {"x":1280,"y":1024,"w":256,"h":256},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+            "sourceSize": {"w":256,"h":256}
+        }
+    },
+    "meta": {
+        "app": "http://www.texturepacker.com",
+        "version": "1.0",
+        "image": "Firework.png",
+        "format": "RGBA8888",
+        "size": {"w":1536,"h":1280},
+        "scale": "1",
+        "smartupdate": "$TexturePacker:SmartUpdate:17e4a2d92ff3e27832c3f4938cec7c85$"
+    }
+}

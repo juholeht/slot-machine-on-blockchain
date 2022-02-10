@@ -1,0 +1,30 @@
+{
+  "short_name": "Owls jackpot",
+  "name": "Provably fair slot machine on blockchain.",
+  "icons": [
+    {
+      "src": "pollo-1.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "pollo-2.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "pollo-3.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "pollo-4.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,14 @@
+.winning-card {
+    top: 15rem;
+    left: 16.5rem;
+    position: absolute;
+    opacity:0.9
+}
+
+.winning-text {
+    font-size: x-large;
+}
+
+.winning-prize {
+    font-size: xx-large;
+}

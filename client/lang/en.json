@@ -1,0 +1,82 @@
+{
+  "addressText": {
+    "defaultMessage": "Address",
+    "description": "Text for player address"
+  },
+  "autoplayTooltip": {
+    "defaultMessage": "Autoplay",
+    "description": "Tooltip instructions for autoplay button"
+  },
+  "balanceText": {
+    "defaultMessage": "Balance",
+    "description": "Text for player balance"
+  },
+  "decreaseStakeTooltip": {
+    "defaultMessage": "Decrease stake",
+    "description": "Tooltip instructions for decreasing stake button"
+  },
+  "gameIsReady": {
+    "defaultMessage": "Everything is now ready. Game on!",
+    "description": "Info about readiness of round"
+  },
+  "gameRoundInitiationDescription": {
+    "defaultMessage": "Confirm transaction first. After that, it will be recorded to blockchain.",
+    "description": "Description for game round initiation"
+  },
+  "gameRoundInitiationLabel": {
+    "defaultMessage": "Game round initiation",
+    "description": "Label for game round initiation"
+  },
+  "increaseStakeTooltip": {
+    "defaultMessage": "Increase stake",
+    "description": "Tooltip instructions for increasing stake button"
+  },
+  "jackpotText": {
+    "defaultMessage": "Jackpot",
+    "description": "Text for Jackpot prize pool"
+  },
+  "playTooltip": {
+    "defaultMessage": "Play",
+    "description": "Tooltip instructions for play button"
+  },
+  "setAutoPlayTitle": {
+    "defaultMessage": "Set autoplay",
+    "description": "Title for setting the autoplay"
+  },
+  "stakeLabel": {
+    "defaultMessage": "Stake",
+    "description": "Label for choosing the stake"
+  },
+  "startButton": {
+    "defaultMessage": "Start",
+    "description": "Text for start button"
+  },
+  "totalRounds": {
+    "defaultMessage": "Total game rounds of {initialSpinCount} selected.",
+    "description": "Info about game round initiation"
+  },
+  "totalRoundsLabel": {
+    "defaultMessage": "Total rounds",
+    "description": "Label for total rounds selected"
+  },
+  "waitingConfirmationsDescription": {
+    "defaultMessage": "Almost there! Waiting for transaction confirmations to guarantee that the result is provably fair.",
+    "description": "Description for waiting confirmations"
+  },
+  "waitingConfirmationsLabel": {
+    "defaultMessage": "Waiting for confirmation",
+    "description": "Label for waiting confirmations"
+  },
+  "winningInfoText": {
+    "defaultMessage": "You WON!!",
+    "description": "Text to inform that player won"
+  },
+  "winningsText": {
+    "defaultMessage": "Winnings",
+    "description": "Text for player winnings"
+  },
+  "withdrawTooltip": {
+    "defaultMessage": "Withdraw your personal winnings from smart contract to your Ethereum address",
+    "description": "Tooltip instructions for withdraw button"
+  }
+}

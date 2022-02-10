@@ -1,0 +1,31 @@
+.control-panel {
+    position: absolute;
+    top: 34.7rem;
+    left: 3.25rem;
+    display: flex;
+}
+
+.stake {
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 8rem;
+}
+
+.stakeValue {
+    padding-top: 1rem;
+}
+
+.withdraw {
+    position: absolute;
+}
+
+.playButton {
+    position: absolute;
+    left: 20rem;
+}
+
+.autoPlayButton {
+    position: absolute;
+    top: 0.5rem;
+    left: 40.5rem;
+}

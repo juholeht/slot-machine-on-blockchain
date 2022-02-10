@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StatusBar /> renders properly with default values 1`] = `
+<div
+  className="account"
+>
+  <div
+    className="address"
+  >
+    Address: 0xfoobar
+  </div>
+  <div
+    className="balances-row"
+  >
+    <div
+      className="balance"
+    >
+      Balance: 0.62 Ξ
+    </div>
+    <div
+      className="winnings"
+    >
+      Winnings: 0.0044 Ξ
+    </div>
+    <div
+      className="jackpot"
+    >
+      Jackpot: 12.4234 Ξ
+    </div>
+  </div>
+</div>
+`;

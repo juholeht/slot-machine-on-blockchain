@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>Simulation for game economy:</title>
+  </head>
+  <body onload="startSimulation()">
+    <div id="root">
+        <div id="simulation">
+            <strong>Simulation:</strong>
+            <div id="totalRounds"></div>
+            <div id="balance"></div>
+            <div id="jackpotPricePool"></div>
+            <div id="devShare"></div>
+            <div id="jackpotCount"></div>
+            <div id="twoXCount"></div>
+            <div id="fourXCount"></div>
+            <div id="overallPaid"></div>
+        </div>
+        <br/><br/><br/><br/>
+        <div id="variables">
+            <strong>Variables:</strong>
+            <div id="initialBalance"></div>
+            <div id="priceForRound">Price for round: </div>
+            <select name="priceForRoundSelect" id="priceForRoundSelect" onchange="onPriceForRoundInput()">
+                <option value=0.001>0.001 ether</option>
+                <option value=0.01>0.01 ether</option>
+                <option value=0.1>0.1 ether</option>
+                <option value=1>1 ether</option>
+              </select>
+            <div id="devFee"></div>
+            <div id="jackpotSizePercentage"></div>
+            <div id="jackpotOdds"></div>
+            <div id="twoXOdds"></div>
+            <div id="fourXOdds"></div>
+            <div id="oddsMultiplier"></div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+  </body>
+
+  <script>
+    const getRandomNumber = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+
+    const updateJackpotOdds = () => {
+        window.document.getElementById("jackpotOdds").innerHTML = "Odds for jackpot => 1:" + window.jackpotOdds;
+    }
+
+    const updateJackpotLuckyNumber = () => {
+        window.jackpotLuckyNumber = getRandomNumber(1, window.jackpotOdds);
+    }
+
+    const updateOddsMultiplier = () => {
+        window.document.getElementById("oddsMultiplier").innerHTML =  "Odds multiplier (balance / initial balance): " + window.oddsMultiplier;
+    }
+
+    // variables
+    window.initialBalance = 350; // ethers
+    window.priceForRound = 0.001; // ethers
+    window.devFee = 0.05; // percentage taken from round paid by player => 5%
+    window.jackpotSizePercentage = 0.5 // percentage => 50%
+    window.jackpotOdds = 1000 / priceForRound; // e.g. one out of million => 1:1000000
+    updateJackpotLuckyNumber();
+    window.twoXOdds = 5; // e.g. one out of ten => 1:5
+    window.fourXOdds = 20; // e.g. one out of fourty => 1:20
+    window.oddsMultiplier = 1;
+
+    // statics
+    window.rounds = 0;
+    window.balance = window.initialBalance; // ethers
+    window.devShare = 0;  // ethers, what is the devs share 
+    window.jackpotCount = 0;
+    window.twoXCount = 0;
+    window.fourXCount = 0;
+    window.overallPaid = 0;
+    window.oddsMultiplier = 1;
+
+    // show variables:
+    window.document.getElementById("initialBalance").innerHTML = "Initial balance: " + window.initialBalance + " eth";
+    window.document.getElementById("priceForRound").innerHTML = "Price for round: ";
+    window.document.getElementById("devFee").innerHTML = "Dev share of inflow: " + (window.devFee * 100) + "%";
+    window.document.getElementById("jackpotSizePercentage").innerHTML = "Jackpot share of prize pool: " + (window.jackpotSizePercentage * 100) + "%";
+    updateJackpotOdds();
+    window.document.getElementById("twoXOdds").innerHTML =  "Odds for 2x win => 1:" + window.twoXOdds;
+    window.document.getElementById("fourXOdds").innerHTML =  "Odds for 4x win => 1:" + window.fourXOdds;
+    updateOddsMultiplier();
+
+    const onPriceForRoundInput = () => {
+        let e = document.getElementById("priceForRoundSelect");
+        let newPriceForRound = e.options[e.selectedIndex].value;
+        window.priceForRound = newPriceForRound;
+        window.jackpotOdds = (1000 * window.oddsMultiplier) / newPriceForRound;
+        updateJackpotOdds();
+        updateJackpotLuckyNumber();
+    };
+
+    const calculateWinning = () => {
+        const randomNum = getRandomNumber(1, window.jackpotOdds);
+        if (randomNum === window.jackpotLuckyNumber) {
+            window.jackpotCount += 1;
+            return (window.balance - window.devShare) * window.jackpotSizePercentage
+        } else if (randomNum <= (window.jackpotOdds / window.fourXOdds)) {
+            window.fourXCount += 1;
+            return window.priceForRound * 4;
+        } else if (randomNum <= (window.jackpotOdds / window.twoXOdds)) {
+            window.twoXCount += 1;
+            return window.priceForRound * 2;
+        }
+        return 0;
+    }
+
+    const round = (num, precision = 10) => Math.round((num + Number.EPSILON) * precision) / precision;
+
+    const startSimulation = () => {
+      // This illustrates one played round
+      setInterval(() => {
+          window.rounds = window.rounds + 1;
+          const devSharePerRound = window.priceForRound * window.devFee;
+
+          window.balance = window.balance + (window.priceForRound - devSharePerRound);
+          window.devShare = window.devShare + devSharePerRound;
+
+          const oddsMultiplier = Math.round(window.balance / window.initialBalance);
+          if (oddsMultiplier >= 1 && oddsMultiplier !== window.oddsMultiplier) {
+            window.oddsMultiplier = oddsMultiplier;
+            updateOddsMultiplier();
+            window.jackpotOdds = (1000 * window.oddsMultiplier) / window.priceForRound;
+            updateJackpotOdds();
+            updateJackpotLuckyNumber();
+          }
+
+          const winning = calculateWinning();
+          window.balance = window.balance - winning;
+          window.overallPaid += winning;
+
+          // show statics:
+          window.document.getElementById("totalRounds").innerHTML = "Total played rounds: " + window.rounds;
+          window.document.getElementById("balance").innerHTML = "Total price pool (eth): " + window.balance;
+          window.document.getElementById("jackpotPricePool").innerHTML = "Jackpot size (eth): " + (window.balance) * jackpotSizePercentage;
+          window.document.getElementById("devShare").innerHTML = "Dev share (eth): " + window.devShare;
+          window.document.getElementById("jackpotCount").innerHTML = "Jackpot winner count: " + window.jackpotCount;
+          window.document.getElementById("twoXCount").innerHTML = "2x winner count: " + window.twoXCount;
+          window.document.getElementById("fourXCount").innerHTML = "4x winner count: " + window.fourXCount;
+          window.document.getElementById("overallPaid").innerHTML = "Overall paid winnings (eth): " + window.overallPaid;
+      }, 0);
+    }
+</script>
+</html>

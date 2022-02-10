@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AutoPlayDialog /> renders properly with default values 1`] = `
+<ForwardRef(Dialog)
+  aria-labelledby="simple-dialog-title"
+  onClose={[Function]}
+  open={true}
+>
+  <ForwardRef(DialogTitle)
+    id="simple-dialog-title"
+  >
+    Set autoplay
+  </ForwardRef(DialogTitle)>
+  <ForwardRef(FormControl)
+    fullWidth={true}
+  >
+    <ForwardRef(InputLabel)
+      id="stake-select-label"
+    >
+      Stake
+    </ForwardRef(InputLabel)>
+    <ForwardRef(Select)
+      id="stake-select"
+      key="0"
+      label="Stake"
+      labelId="stake-select-label"
+      onChange={[Function]}
+      value={0}
+    >
+      <ForwardRef(MenuItem)
+        key="0.0001"
+        value={0}
+      >
+        0.0001 Ξ
+      </ForwardRef(MenuItem)>
+      <ForwardRef(MenuItem)
+        key="0.001"
+        value={1}
+      >
+        0.001 Ξ
+      </ForwardRef(MenuItem)>
+      <ForwardRef(MenuItem)
+        key="0.01"
+        value={2}
+      >
+        0.01 Ξ
+      </ForwardRef(MenuItem)>
+      <ForwardRef(MenuItem)
+        key="0.1"
+        value={3}
+      >
+        0.1 Ξ
+      </ForwardRef(MenuItem)>
+      <ForwardRef(MenuItem)
+        key="1"
+        value={4}
+      >
+        1 Ξ
+      </ForwardRef(MenuItem)>
+    </ForwardRef(Select)>
+  </ForwardRef(FormControl)>
+  <br />
+  <ForwardRef(FormControl)
+    fullWidth={true}
+  >
+    <ForwardRef(InputLabel)
+      id="total-rounds-select-label"
+    >
+      Total rounds
+    </ForwardRef(InputLabel)>
+    <ForwardRef(Select)
+      id="total-rounds-select"
+      label="Total rounds"
+      onChange={[Function]}
+      value={10}
+    >
+      <ForwardRef(MenuItem)
+        key="10"
+        value={10}
+      >
+        10
+      </ForwardRef(MenuItem)>
+      <ForwardRef(MenuItem)
+        key="20"
+        value={20}
+      >
+        20
+      </ForwardRef(MenuItem)>
+      <ForwardRef(MenuItem)
+        key="50"
+        value={50}
+      >
+        50
+      </ForwardRef(MenuItem)>
+      <ForwardRef(MenuItem)
+        key="100"
+        value={100}
+      >
+        100
+      </ForwardRef(MenuItem)>
+    </ForwardRef(Select)>
+  </ForwardRef(FormControl)>
+  <ForwardRef(Button)
+    color="primary"
+    onClick={[Function]}
+    variant="outlined"
+  >
+    Start
+  </ForwardRef(Button)>
+</ForwardRef(Dialog)>
+`;

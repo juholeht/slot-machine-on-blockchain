@@ -1,0 +1,67 @@
+#root {
+  background-color: #282c34;
+  text-shadow: #000 0px 1px 0px;
+}
+
+body, html {
+  background-color: #282c34;
+  height: 100%;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+.slot-frame {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.sizer {
+    position: relative;
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.dim {
+  filter: brightness(30%);
+  transition: all 1s;
+  pointer-events:none;
+}
+
+.no-dim {
+  filter: brightness(100%);
+  transition: all 1s;
+}

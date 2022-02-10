@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Provably fair slot machine on blockchain."
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Owls jackpot</title>
+  </head>
+  <body onload="scale()" onresize="scale()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+
+  <script>
+    // scale screen for mobile using CSS transform since canvas needs to represented in pixels
+    // FIXME: this is probably possible with pure CSS
+    const MAX_WIDTH = 825;
+    const MAX_HEIGHT = 700;
+    const SCALE_MARGIN = 0.1;
+
+    const getStyle = (screenScale) =>  (
+      "width:1000px; height:1400px;-moz-transform: scale("+screenScale+","+screenScale+ "); \
+      -webkit-transform: scale("+screenScale+","+screenScale+ "); \
+      -o-transform: scale("+screenScale+","+screenScale+ "); \
+      -ms-transform: scale("+screenScale+","+screenScale+ "); \
+      transform: scale("+screenScale+","+screenScale+ "); \
+      -moz-transform-origin: top left; \
+      -webkit-transform-origin: top left; \
+      -o-transform-origin: top left; \
+      -ms-transform-origin: top left; \
+      transform-origin: top left;"
+      );
+
+    const scale = () => {
+      const widthScale = window.outerWidth / MAX_WIDTH;
+      const heightScale = window.outerHeight / MAX_HEIGHT;
+      const scale = (widthScale < heightScale ? widthScale : heightScale) - SCALE_MARGIN;
+      window.document.getElementById('root').style = getStyle(scale);
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+.instructions {
+    background-color: #282c34;
+    color: #f0f0f0;
+    text-shadow: #000 0px 1px 0px;
+    font-family: "Consolas", "Courier New", "Courier";
+    font-size: 2em;
+    line-height: 1.40em;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+
+  .instruction-content {
+    margin-left: 3em;
+    margin-right: 4em;
+    margin-top: 2.5em;
+    height: 8rem;
+    max-width: 750px;
+  }
+
+  #web3-connect-button {
+    margin-left: 23em;
+    margin-top: 1.5rem;
+    display: block;
+  }
+
+  .typed-cursor {
+    color: #f0f0f0;
+    font-size: 2.45em;
+  }
